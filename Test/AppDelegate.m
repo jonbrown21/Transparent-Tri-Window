@@ -17,6 +17,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    self.window.styleMask = self.window.styleMask | NSFullSizeContentViewWindowMask;
+    self.window.titleVisibility = NSWindowTitleHidden;
+    self.window.titlebarAppearsTransparent = YES;
+    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
